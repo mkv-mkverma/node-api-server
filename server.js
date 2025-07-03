@@ -2,7 +2,8 @@ const express = require("express");
 const app = express();
 require("dotenv").config(); // must come before using process.env
 
-const PORT = process.env.PORT || 3000; // fallback if PORT not set
+const PORT = process.env.PORT || 5001; // fallback if PORT not set
+// const PORT = process.env.PORT || 3000; // fallback if PORT not set
 
 app.get("/", (req, res) => {
   res.send("🚀 Welcome to the API server!");
